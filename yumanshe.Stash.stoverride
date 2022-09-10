@@ -1,18 +1,24 @@
-#!name=yumanshe
-#!desc=Comics
+#!name=酷我音乐
+#!desc=代码重构,这版是最完美！！！的酷我解锁
+#!openUrl=https://t.me/Functional_Store_Hub
+#!author=@Nameking77 https://t.me/Nameking77
+#!homepage=https://github.com/I-am-R-E/Functional-Store-Hub/tree/Master/KuWoMusic
+#!manual=https://t.me/Functional_Store_Hub/10
+#!icon=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Files/icon.png
+#!other=KuWoMusic.Stash.stoverride
 
-name: yumanshe
-desc:Comics
+name: 酷我音乐
+desc: 代码重构,这版是最完美！！！的酷我解锁 By Nameking77 https://t.me/Nameking77
 http:
   mitm:
     - '*.zjgeo.eqobc.com, *.xnour.xonap.com, *.opzzy.kefsww.com, *.tqrbq.mpckv.com'
   script:
     - match: ^https?:\/\/.*\.com\/api\/app\/user\/info$
-      name: Comics
+      name: KuWoMusic
       type: response
       require-body: true
       timeout: 10
 script-providers:
- Comics:
+  KuWoMusic:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornComicsCrack.js
     interval: 86400
