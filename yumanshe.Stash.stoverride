@@ -1,5 +1,5 @@
-#!name=欲漫社
-#!desc=欲漫社漫画
+#!name=酷我音乐
+#!desc=代码重构,这版是最完美！！！的酷我解锁
 #!openUrl=https://t.me/Functional_Store_Hub
 #!author=@Nameking77 https://t.me/Nameking77
 #!homepage=https://github.com/I-am-R-E/Functional-Store-Hub/tree/Master/KuWoMusic
@@ -7,8 +7,8 @@
 #!icon=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Files/icon.png
 #!other=KuWoMusic.Stash.stoverride
 
-name: 欲漫社
-desc: 欲漫社漫画
+name: 酷我音乐
+desc: 代码重构,这版是最完美！！！的酷我解锁 By Nameking77 https://t.me/Nameking77
 http:
   mitm:
     - '*.zjgeo.eqobc.com, *.xnour.xonap.com, *.opzzy.kefsww.com, *.tqrbq.mpckv.com'
