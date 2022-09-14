@@ -1,15 +1,14 @@
 name: 欲漫社
 desc: 欲漫社漫画
 http:
-  mitm:
-    - 'zjgeo.eqobc.com, xnour.xonap.com, opzzy.kefsww.com, tqrbq.mpckv.com'
   script:
     - match: ^https?:\/\/.*\.com\/api\/app\/user\/info$
-      name: yumashe
+      name: yms
       type: response
       require-body: true
-      timeout: 10
+      timeout: 20
+ 
 script-providers:
-  yumashe:
-    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornComicsCrack.js
+  yms:
+    url:https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornComicsCrack.js
     interval: 86400
