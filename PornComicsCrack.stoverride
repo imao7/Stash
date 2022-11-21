@@ -1,0 +1,28 @@
+name: PornComicsCrack
+desc: PornComicsCrack
+http:
+  script:
+    # > 欲漫涩解锁会员漫画&视频
+    - match: ^https?:\/\/.*\.com\/api\/app\/user\/info$
+      name: PornComicsCrack.js
+      type: response
+      require-body: true
+      timeout: 30
+    - match: ^https?:\/\/.*\.com\/api\/app\/media
+      name: PornVideosCrack.js
+      type: request
+      require-body: false
+      timeout: 30
+  mitm:
+    - "zjgeo.eqobc.com"
+    - "xnour.xonap.com"
+    - "opzzy.kefsww.com"
+    - "tqrbq.mpckv.com"
+
+script-providers:
+  PornComicsCrack.js:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornComicsCrack.js
+    interval: 86400
+  PornVideosCrack.js:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornVideosCrack.js
+    interval: 86400
