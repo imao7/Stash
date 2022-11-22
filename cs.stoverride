@@ -1,0 +1,16 @@
+name: bilibiliHD
+desc: bilibiliHD
+http:
+  script:
+    #hostname=api.bilibili.com, app.bilibili.com,
+    - match: ^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?))
+      name: bili1080%2B.js
+      type: response
+      require-body: true
+      timeout: 30
+  mitm: 
+    - "app.bilibili.com"
+script-providers:
+  bili1080%2B.js:
+    url: https://raw.githubusercontent.com/imao7/Surge/master/bili1080%2B.js
+    interval: 86400
