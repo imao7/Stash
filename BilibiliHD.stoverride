@@ -1,5 +1,5 @@
-name: bilibiliHD
-desc: bilibiliHD
+name: BilibiliHD
+desc: BilibiliHD
 http:
   script:
     #hostname=api.bilibili.com, app.bilibili.com,
