@@ -1,0 +1,16 @@
+name: zymk
+desc: zymk
+http:
+  script:
+    - match: ^https:\/\/apigate\.zymk\.cn
+      name: zymk.js
+      type: response
+      require-body: true
+      timeout: 30
+  mitm:
+    - "apigate.zymk.cn"
+
+script-providers:
+  zymk.js:
+    url: https://raw.githubusercontent.com/gjwj666/qx/main/zymk.js
+    interval: 86400
