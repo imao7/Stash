@@ -1,0 +1,10 @@
+name: 555去广告
+desc: 555去广告
+http:
+  rewrite:
+    - ^https?:\/\/vip7\.fzwdyy\.cn:8083\/api\/getAdvertInfo - reject
+    - ^https?:\/\/vip7\.fzwdyy\.cn:8083\/api\/getGOOGAdvert - reject
+    - ^https?:\/\/vpic\.cms\.qq\.com\/nj_vpic - reject
+  mitm:
+    - "vip7.fzwdyy.cn"
+    - "vpic.cms.qq.com"
