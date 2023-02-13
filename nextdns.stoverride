@@ -1,0 +1,8 @@
+name: NextDNS DNS
+dns:
+  default-nameserver: 
+    - system
+    - 1.1.1.1
+    - 8.8.8.8
+  nameserver: 
+    - https://dns.nextdns.io
