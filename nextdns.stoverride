@@ -5,4 +5,5 @@ dns:
     - 1.1.1.1
     - 8.8.8.8
   nameserver: 
-    - https://dns.nextdns.io
+    - quic://dns.adguard.com:853
+    - quic://dns.nextdns.io:853
