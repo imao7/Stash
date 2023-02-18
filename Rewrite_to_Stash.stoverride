@@ -36,11 +36,11 @@ http:
 
 script-providers:
   QX转换:
-    url: https://github.com/chengkongyiban/stash/raw/main/js/QX_Rewrite_Parser.js
+    url: https://raw.githubusercontent.com/imao7/Stash/master/QX_Rewrite_Parser.js
     interval: 86400
   SG转换:
-    url: https://github.com/chengkongyiban/stash/raw/main/js/Surge_Rewrite_Parser.js
+    url: https://raw.githubusercontent.com/imao7/Stash/master/Surge_Rewrite_Parser.js
     interval: 86400
   规则集解析:
-    url: https://github.com/chengkongyiban/stash/raw/main/js/rule_parser.js
+    url: https://raw.githubusercontent.com/imao7/Stash/master/rule_parser.js
     interval: 86400
