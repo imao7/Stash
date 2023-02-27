@@ -1,18 +1,22 @@
 name: PornComicsCrack
 desc: PornComicsCrack
+
 http:
+
   script:
     # > 欲漫涩解锁会员漫画&视频
     - match: ^https?:\/\/.*\.com\/api\/app\/user\/info$
       name: PornComicsCrack.js
       type: response
-      require-body: true
       timeout: 30
+      require-body: true
+      max-size: 3145728
+
     - match: ^https?:\/\/.*\.com\/api\/app\/media
       name: PornVideosCrack.js
       type: request
-      require-body: false
       timeout: 30
+
   mitm:
     - "zjgeo.eqobc.com"
     - "xnour.xonap.com"
