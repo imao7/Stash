@@ -1,0 +1,11 @@
+name: 禁用QUIC
+desc: 禁用QUIC
+
+rules:
+  - SCRIPT,quic,REJECT
+  - SCRIPT,udp-cn,REJECT
+ 
+script:
+  shortcuts: # 可以在 rule 中引用
+    quic: network == 'udp' and (dst_port == 443 or dst_port == 4483 or dst_port == 9305) # 4483 与 9305 为 BiliBili 的 QUIC CDN
+    udp-cn: network == 'udp' and geoip(dst_ip if dst_ip != '' else resolve_ip(host)) == 'CN' # 禁止发往 CN 的 UDP
