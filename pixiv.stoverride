@@ -1,0 +1,20 @@
+name: Pixiv去广告
+desc: 去除应用最下方广告
+
+http:
+
+  script:  
+    - match: ^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token)
+      name: pixivAds
+      type: response
+      timeout: 30
+      require-body: true
+      max-size: 3145728
+
+  mitm:
+    - "oauth.secure.pixiv.net"
+
+script-providers:
+  pixivAds:
+    url: https://github.com/ddgksf2013/Scripts/raw/master/pixivAds.js
+    interval: 86400
