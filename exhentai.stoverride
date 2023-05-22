@@ -1,0 +1,31 @@
+name: exhentai
+
+desc: exhentai
+
+http:
+
+  script:
+
+    - match: ^https:\/\/exhentai\.org\/
+
+      name: replaceHeader_0
+
+      type: request
+
+      timeout: 30
+
+      argument: |-
+
+        Cookie: yay=louder->Cookie: sk=7amnahaa9mfgo8uyyuirtfnasxp8; sl=dm_2; igneous=e4697eead; ipb_member_id=7323726; ipb_pass_hash=f1f26ed475f78827155a891984f99aaa
+
+  mitm:
+
+    - "exhentai.org"
+
+script-providers:
+
+  replaceHeader_0:
+
+    url: https://raw.githubusercontent.com/xream/scripts/main/surge/modules/replace-header/index.js
+
+    interval: 86400
