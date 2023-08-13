@@ -1,0 +1,15 @@
+name: "Ping CN CF 二合一面板"
+desc: "根据网络延迟生成柱状图"
+#!system=ios
+tiles:
+    # 如果一行放不下了可以把参数 num=7 改成6或者更小
+  - name: "ProPing_5"
+    interval: 3600
+    title: "ProPing"
+    icon: "barometer"
+    backgroundColor: ""
+    timeout: 30     
+script-providers:
+  "ProPing_5":
+    url: https://raw.githubusercontent.com/Keywos/rule/main/JS/ProPing.js
+    interval: 86400
